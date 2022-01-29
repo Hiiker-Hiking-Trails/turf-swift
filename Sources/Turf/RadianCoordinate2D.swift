@@ -41,6 +41,17 @@ public struct RadianCoordinate2D {
     }
     
     /**
+     Initializes a coordinate pair measured in radians that is coincident to the given coordinate pair measured in degrees of arc.
+     
+     - parameter degreeCoordinate: A coordinate pair measured in degrees of arc.
+     */
+    
+    init(_ degreeCoordinate: LocationCoordinate3D) {
+        self.longitude = degreeCoordinate.longitude.toRadians()
+        self.latitude = degreeCoordinate.latitude.toRadians()
+    }
+    
+    /**
      Returns direction given two coordinates.
      */
     public func direction(to coordinate: RadianCoordinate2D) -> Measurement<UnitAngle> {
