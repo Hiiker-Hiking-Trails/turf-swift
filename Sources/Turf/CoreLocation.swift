@@ -48,6 +48,11 @@ public typealias LocationDistance = Double
 public typealias LocationDegrees = Double
 
 /**
+ A latitude or longitude in degrees.
+ */
+public typealias Location = CLLocation
+
+/**
  A geographic coordinate with its components measured in degrees.
  */
 public struct LocationCoordinate2D {
